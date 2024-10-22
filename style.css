@@ -1,0 +1,88 @@
+/* Estilo global */
+body {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo do main */
+main {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilo do header */
+.userInfo {
+  margin-bottom: 20px;
+}
+
+.userInfo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #f0f0f0;
+}
+
+.userInfo h1 {
+  margin-top: 10px;
+  font-size: 24px;
+}
+
+/* Estilo dos cards */
+.linkBox {
+  display: grid;
+  gap: 15px;
+}
+
+.card {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo dos links */
+.card a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #90e0ef;
+}
+
+/* Estilo do footer */
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #a0a0a0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .userInfo h1 {
+    font-size: 20px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
